@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nueva Colombia Holding Group</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Urbanist:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: url('img/fondohome.png') no-repeat center center;
+      background-size: cover;
+      color: #000;
+      padding: 30px;
+      text-align: center;
+    }
+    header img {
+      width: 700px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+      font-family: 'Raleway', sans-serif;
+    }
+    .nav-menu {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .nav-menu a {
+      padding: 10px 20px;
+      background-color: #fff;
+      border: 2px solid #333;
+      border-radius: 8px;
+      font-weight: bold;
+      color: #000;
+      font-family: 'Urbanist', sans-serif;
+      text-decoration: none;
+      font-size: 1.2em;
+      transition: all 0.3s ease;
+    }
+    .nav-menu a:hover {
+      background-color: #333;
+      color: #fff;
+    }
+    header p {
+      margin: 10px 0 0;
+      color: #444;
+      font-size: 2.25em;
+      font-family: 'Urbanist', sans-serif;
+      font-weight: 900;
+    }
+    main {
+      padding: 20px;
+      text-align: center;
+    }
+    .empresas-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .empresa {
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .empresa a {
+      text-decoration: none;
+      color: #007BFF;
+      font-weight: bold;
+    }
+    .empresa a:hover {
+      text-decoration: underline;
+    }
+    .empresa img {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px;
+      cursor: pointer;
+    }
+    .empresa img:hover {
+      opacity: 0.9;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- LOGO HOLDING -->
+<img src="img/logoholding.png" alt="Logo NC Holding">
+
+<!-- LOGO DELIVERY A LA IZQUIERDA AJUSTADO -->
+<div style="position: absolute; top: 140px; left: 60px;">
+  <img src="img/deliverylogo.png" alt="Logo Delivery" style="width: 600px; height: auto;">
+</div>
+
+<!-- BOTÓN VER MI CARRITO MÁS ABAJO (debajo del logo y sin estorbar) -->
+<div style="position: absolute; top: 360px; left: 50%; transform: translateX(-50%);">
+  <a href="carrito.html" style="
+    padding: 15px 30px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 1.6em;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  ">🛒 VER MI CARRITO</a>
+</div>
+
+<!-- LOGO ACEPTAMOS A LA DERECHA -->
+<div style="position: absolute; top: 60px; right: 60px;">
+  <img src="img/aceptamoslogo.png" alt="Aceptamos Medios de Pago" style="width: 600px; height: auto;">
+</div>
+    <h1>GRUPO DE EMPRENDEDORES NUEVA COLOMBIA</h1>
+    <div class="nav-menu">
+      <a href="index.html">Página Principal</a>
+      <a href="quienes.html">¿Quiénes Somos?</a>
+      <a href="mision.html">Misión</a>
+      <a href="vision.html">Visión</a>
+      <a href="#">Contacto</a>
+      <a href="adherir.html">Adherir mi Emprendimiento</a>
+    </div>
+    <p><strong>“La necesidad es la madre de nuestra próxima empresa.”</strong></p>
+  </header>
+
+  <main>
+    <p>Holding empresarial paraguayo que impulsa y conecta marcas y emprendimientos de Nueva Colombia y otras ciudades.</p>
+
+    <div class="empresas-grid">
+      <div class="empresa">
+        <a href="alma.html">
+          <img src="img/alma logo.png" alt="Logo Alma Esencial">
+          <p>Alma Esencial<br><small>Cosmética natural y artesanal</small></p>
+        </a>
+      </div>
+      <div class="empresa">
+        <a href="sublishop.html">
+          <img src="img/sublishop logo.png" alt="Logo Sublishop">
+          <p>Sublishop<br><small>Personalización y sublimación</small></p>
+        </a>
+      </div>
+      <div class="empresa">
+        <a href="rancho.html">
+          <img src="img/logo-rancho.png" alt="Logo Rancho Ña Ignacia">
+          <p>Rancho Ña Ignacia<br><small>Alojamiento y experiencias turísticas</small></p>
+        </a>
+      </div>
+      <div class="empresa">
+        <a href="colombiasoft.html">
+          <img src="img/colombia soft.png" alt="Logo Colombia Soft">
+          <p>Colombia Soft<br><small>Soluciones informáticas</small></p>
+        </a>
+      </div>
+      <div class="empresa">
+        <a href="agro.html">
+          <img src="img/Rancho Ña Ignacia Agro (2).png" alt="Logo Rancho Ña Ignacia Agro">
+          <p>Rancho Ña Ignacia Agro<br><small>Producción agrícola</small></p>
+        </a>
+      </div>
+      <div class="empresa">
+        <a href="sazon.html">
+          <img src="img/logomili.png" alt="Logo Sazón de Mili">
+          <p>Sazón de Mili<br><small>Comida casera y tradicional</small></p>
+        </a>
+      </div>
+      <div class="empresa">
+        <a href="mariposa.html">
+          <img src="img/mariposalogo.png" alt="Logo Mariposa Arte Estudio">
+          <p>Mariposa Arte Estudio<br><small>Arte, decoración y creatividad</small></p>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Nueva Colombia Holding Group</p>
+  </footer>
+</body>
+</html>
+<section style="margin-top: 60px; padding: 20px; background-color: #e8f0ff; border-radius: 10px; font-size: 2.4em; font-family: Arial, sans-serif;">
+  <h2 style="font-size: 4em; color: #222;">Beneficios de pertenecer al holding</h2>
+  <ul style="list-style-type: none; padding-left: 0;">
+    <li>✅ Apoyo gráfico y visual personalizado para tu emprendimiento.</li>
+    <li>✅ Visibilidad online en una red de empresas consolidadas.</li>
+    <li>✅ Acceso a redes de clientes de todo el país.</li>
+    <li>✅ Asesoría técnica, digital y comercial para crecer más rápido.</li>
+  </ul>
+</section>
+
+<section style="margin-top: 40px; padding: 20px; background-color: #e8f0ff; border-radius: 10px; font-size: 2.4em; font-family: Arial, sans-serif;">
+  <h2 style="font-size: 4em; color: #222;">Testimonios</h2>
+  <blockquote style="margin: 10px 0; font-style: italic; border-left: 6px solid #ccc; padding-left: 20px;">“Gracias al holding pude lanzar mi marca con identidad propia y vender más rápido.” – Ana, emprendedora de Cosmética Natural.</blockquote>
+  <blockquote style="margin: 10px 0; font-style: italic; border-left: 6px solid #ccc; padding-left: 20px;">“Nos ayudaron con diseños, redes y ahora tenemos clientes nuevos cada semana.” – Diego, dueño de tienda de sublimados.</blockquote>
+</section>
+
+<section style="margin-top: 40px; padding: 20px; background-color: #e8f0ff; border-radius: 10px; font-size: 2.4em; font-family: Arial, sans-serif;">
+  <h2 style="font-size: 4em; color: #222;">Galería</h2>
+  <p>Muy pronto podrás ver imágenes de ferias, stands, productos y momentos compartidos entre emprendedores del grupo.</p>
+</section>
+
+<section style="margin-top: 40px; padding: 20px; background-color: #e8f0ff; border-radius: 10px; font-size: 2.4em; font-family: Arial, sans-serif;">
+  <h2 style="font-size: 4em; color: #222;">Contacto</h2>
+  <p>¿Querés sumarte o saber más? Escribinos por WhatsApp: <strong>+595 971 123 456</strong> o enviá tu consulta a <strong>ncholding@gmail.com</strong></p>
+  <p>También podés completar el formulario para <a href="#">adherir tu emprendimiento</a>.</p>
+</section>
+
+<!-- Redes sociales -->
+<section style="margin-top: 60px; padding-bottom: 60px; text-align: center; font-size: 2.4em; background-color: #e8f0ff; font-family: Arial, sans-serif;">
+  <h3 style="font-size: 3.2em;">Seguinos en nuestras redes</h3>
+  <div style="margin-top: 20px;">
+    <a href="#"><img src="img/facebooklogo.png" alt="Facebook" style="width: 200px; margin: 0 20px;"></a>
+    <a href="#"><img src="img/instagramlogo.png" alt="Instagram" style="width: 200px; margin: 0 20px;"></a>
+    <a href="#"><img src="img/tiktoklogo.png" alt="TikTok" style="width: 200px; margin: 0 20px;"></a>
+    <a href="https://wa.me/595971123456" target="_blank"><img src="img/walogo.png" alt="WhatsApp" style="width: 200px; margin: 0 20px;"></a>
+  </div>
+</section>

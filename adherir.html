@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adherir mi Emprendimiento - Nueva Colombia Holding Group</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0faff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #5ec7e4;
+      padding: 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    main {
+      padding: 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea, select {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .botones-envio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .botones-envio a {
+      padding: 14px 24px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+    }
+
+    .whatsapp {
+      background-color: #25D366;
+    }
+
+    .whatsapp:hover {
+      background-color: #1ea955;
+    }
+
+    .telegram {
+      background-color: #0088cc;
+    }
+
+    .telegram:hover {
+      background-color: #006ca1;
+    }
+
+    .volver {
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 1.2em;
+      color: #007BFF;
+      text-decoration: none;
+      text-align: center;
+      width: 100%;
+    }
+
+    .volver:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Adherí tu Emprendimiento</h1>
+  </header>
+
+  <main>
+    <p>Completá el siguiente formulario para postular tu emprendimiento al holding:</p>
+
+    <form id="form-adherir">
+      <input type="text" id="nombre" placeholder="Nombre del Emprendimiento" required>
+      <input type="text" id="responsable" placeholder="Nombre del Responsable" required>
+      <select id="rubro" required>
+        <option value="">Seleccioná el rubro</option>
+        <option value="Cosmética">Cosmética</option>
+        <option value="Sublimación">Sublimación</option>
+        <option value="Gastronomía">Gastronomía</option>
+        <option value="Agricultura">Agricultura</option>
+        <option value="Servicios">Servicios</option>
+        <option value="Otro">Otro</option>
+      </select>
+      <input type="text" id="ciudad" placeholder="Ciudad / Localidad" required>
+      <input type="tel" id="whatsapp" placeholder="Número de WhatsApp" required>
+      <textarea id="descripcion" rows="4" placeholder="Breve descripción del emprendimiento"></textarea>
+
+      <div class="botones-envio">
+        <a href="#" class="whatsapp" onclick="enviarPorWhatsApp()">Enviar por WhatsApp</a>
+        <a href="#" class="telegram" onclick="enviarPorTelegram()">Enviar por Telegram</a>
+      </div>
+    </form>
+
+    <a href="index.html" class="volver">← Volver a la página principal</a>
+  </main>
+
+  <script>
+    function construirMensaje() {
+      const nombre = document.getElementById("nombre").value;
+      const responsable = document.getElementById("responsable").value;
+      const rubro = document.getElementById("rubro").value;
+      const ciudad = document.getElementById("ciudad").value;
+      const contacto = document.getElementById("whatsapp").value;
+      const descripcion = document.getElementById("descripcion").value;
+
+      return `Hola, quiero adherir mi emprendimiento al holding:\n\n📌 Nombre: ${nombre}\n👤 Responsable: ${responsable}\n📂 Rubro: ${rubro}\n📍 Ciudad: ${ciudad}\n📱 WhatsApp: ${contacto}\n📝 Descripción: ${descripcion}`;
+    }
+
+    function enviarPorWhatsApp() {
+      const numero = "595982037162";
+      const mensaje = construirMensaje();
+      const enlace = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+      window.open(enlace, "_blank");
+    }
+
+    function enviarPorTelegram() {
+      const usuarioTelegram = "NuevaColombiaHoldingBot"; // Cambiá por tu usuario real de Telegram
+      const mensaje = construirMensaje();
+      const enlace = `https://t.me/${usuarioTelegram}?start=${encodeURIComponent(mensaje)}`;
+      window.open(enlace, "_blank");
+    }
+  </script>
+
+</body>
+</html>
