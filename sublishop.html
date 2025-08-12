@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sublishop - Personalización y Sublimación</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #fff7c0, #d5e6ff, #ffd6d6);
+    }
+    header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: transparent;
+      padding: 40px 20px 20px 20px;
+      border-bottom: 2px solid #eee;
+      position: relative;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+    .logo-container img {
+      height: 200px;
+      width: auto;
+      max-width: none;
+      transform: scaleX(1.5);
+    }
+    .descripcion {
+      width: 100%;
+      text-align: center;
+      color: black;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+    .descripcion h1 {
+      margin: 10px 0 5px;
+      font-size: 81px;
+      font-weight: 900;
+      color: black;
+      text-shadow: 2px 2px 3px #ffffff;
+    }
+    .descripcion p {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 600;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      color: black;
+      text-shadow: 1px 1px 2px #ffffff;
+    }
+    .contacto-header {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+      width: 100%;
+    }
+    .contacto-header a {
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .whatsapp { background-color: #25D366; }
+    .telegram { background-color: #0088cc; }
+    .carrito-icono {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: #28a745;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 20px;
+      text-decoration: none;
+      z-index: 999;
+    }
+    .decoracion-lateral {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      height: auto;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .producto {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+    }
+    .producto img {
+      width: 100%;
+      border-radius: 8px;
+      height: auto;
+    }
+    .producto h3 {
+      font-size: 18px;
+      margin: 15px 0 5px;
+    }
+    .producto p {
+      color: green;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .producto input {
+      width: 60px;
+      padding: 4px;
+      margin-right: 10px;
+    }
+    .producto button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <a class="carrito-icono" href="carrito.html">🛒</a>
+  <header>
+    <div class="logo-container">
+      <img src="img/sublishop logo.png" alt="Logo Sublishop">
+    </div>
+    <div class="descripcion">
+      <h1>Bienvenido a Sublishop</h1>
+      <p>Personalizamos tus ideas: tazas, remeras, termos, almohadas, carteles, etiquetas, bordados, regalos empresariales y más. Calidad garantizada en cada detalle. ¡Tu diseño, nuestra pasión!</p>
+    </div>
+    <div class="contacto-header">
+      <a class="whatsapp" href="https://wa.me/595982037162" target="_blank">WhatsApp</a>
+      <a class="telegram" href="https://t.me/595982037162" target="_blank">Telegram</a>
+    </div>
+    <img class="decoracion-lateral" src="img/sublishopladoderecho.png" alt="Decoración lateral">
+  </header>
+
+  <section class="productos">
+    <div class="producto">
+      <img src="img/almohadones 80.000.png" alt="Almohadones">
+      <h3>Almohadones personalizados</h3>
+      <p>Gs. 80.000</p>
+      <input type="number" value="1" min="1">
+      <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/bolsos personalizados 50.000.png" alt="Bolsos">
+      <h3>Bolsos personalizados</h3>
+      <p>Gs. 50.000</p>
+      <input type="number" value="1" min="1">
+      <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/case personalizado 70.000.jpg" alt="Case">
+      <h3>Case personalizado</h3>
+      <p>Gs. 70.000</p>
+      <input type="number" value="1" min="1">
+      <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/personalizamos tu prenda 50.000.jpg" alt="Prenda">
+      <h3>Personalizamos tu prenda</h3>
+      <p>Gs. 50.000</p>
+      <input type="number" value="1" min="1">
+      <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/poyvi 35.000.jpg" alt="Poyvi">
+      <h3>Poyvi</h3>
+      <p>Gs. 35.000</p>
+      <input type="number" value="1" min="1">
+      <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/regalos personalizados 50.000.jpg" alt="Regalos">
+      <h3>Regalos personalizados</h3>
+      <p>Gs. 50.000</p>
+      <input type="number" value="1" min="1">
+      <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/remeras personalizadas ya con la  sublimacion 47.000.jpg" alt="Remeras">
+      <h3>Remeras personalizadas con sublimación</h3>
+      <p>Gs. 47.000</p>
+      <input type="number" value="1" min="1">
+      <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/taza personalizada 18000.png" alt="Taza">
+      <h3>Taza personalizada</h3>
+      <p>Gs. 18.000</p>
+      <input type="number" value="1" min="1">
+      <button>Agregar al carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/vaso termico personalizado 50.000.jpg" alt="Vaso térmico">
+      <h3>Vaso térmico personalizado</h3>
+      <p>Gs. 50.000</p>
+      <input type="number" value="1" min="1">
+      <button>Agregar al carrito</button>
+    </div>
+  </section>
+</body>
+</html>
